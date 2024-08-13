@@ -37,8 +37,7 @@ coverage/
 # Optional: IntelliJ IDEA project files
 *.iml
 
-# Optional: Build artifacts
-build/
+
 
 # Optional: Backup files
 *.bak
@@ -70,3 +69,4 @@ Dockerfile
 
 # Optional: Test-related files (if using a specific testing setup)
 test-results/
+
