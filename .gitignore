@@ -1,0 +1,72 @@
+# Node modules directory
+node_modules/
+
+
+
+# Environment files
+.env
+.env.dev
+.env.local
+
+# Logs
+*.log
+logs/
+
+# npm package-lock files
+package-lock.json
+
+# Yarn lock file (if using Yarn)
+yarn.lock
+
+# macOS specific files
+.DS_Store
+
+# Windows specific files
+Thumbs.db
+
+# IDE and editor directories
+.vscode/
+.idea/
+
+# Coverage directory (for code coverage tools)
+coverage/
+
+# Optional: Debug directory for VSCode
+.vscode/
+
+# Optional: IntelliJ IDEA project files
+*.iml
+
+# Optional: Build artifacts
+build/
+
+# Optional: Backup files
+*.bak
+*.swp
+
+# Optional: System files
+*.tmp
+*.temp
+*.swo
+*.swn
+
+# Optional: ESLint cache
+.eslintcache
+
+# Optional: Prettier cache
+.prettiercache
+
+# Optional: TypeScript cache
+*.tsbuildinfo
+
+# Optional: Other tool-specific files
+*.tgz
+*.gz
+*.zip
+
+# Optional: Docker files (if not using Docker)
+docker-compose.override.yml
+Dockerfile
+
+# Optional: Test-related files (if using a specific testing setup)
+test-results/
