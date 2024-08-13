@@ -5,18 +5,18 @@ import dotenv from "dotenv"
 dotenv.config()
 import { connectToDatabase } from "./config/database";
 const ipAddresses = getIpAddresses()
-const PORT = parseInt(process.env.PORT as string, 10) || 4000;
+const PORT = parseInt(process.env.PORT as string, 10) || 8000;
 const app = express();
 app.use(express.json())
 app.get('*',(req,res)=> {
     res.json({
-        message : "Hello world"
+        env : process.env
     })
 })
 
-console.log(process.env.NODE_ENV)
 
 const server = async() => {
+    logger.info(`Starting ${process.env.npm_package_name} (v${process.env.npm_package_version}) in ${process.env.NODE_ENV} mode`);
     await connectToDatabase()
     app.listen(PORT, '0.0.0.0', () => {
         logger.info(`Server is running on http://localhost:${PORT}`)
